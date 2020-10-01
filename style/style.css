@@ -1,0 +1,159 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+body{
+  background-color:pink;
+}
+.container{
+  display: flex;
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  background-color: #fff;
+}
+.back-side{
+  position: relative;
+  width: 300px;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center ;
+  background-size: cover;
+}
+.back-link{
+  font-size: 14px;
+  display: block;
+  padding: 5px;
+  margin-top: 25px;
+  margin-left:50px;
+  text-decoration: none;
+  color: rgb(128, 122, 122);
+}
+.back-link:hover{
+  color: black;
+}
+.back-link::before{
+  position: absolute;
+  top: 30px;
+  left:20px ;
+  content: "";
+  width: 30px;
+  height: 15px;
+  background-image: url("../img/arrow-back.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+
+.information-box{
+width: 600px;
+
+}
+.top-menu{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0%;
+  padding-top: 10px;
+  justify-content:flex-end ;
+}
+.top-list{
+margin-right: 25px;
+font-size: 14px;
+}
+.top-link:hover{
+color: black;
+}
+.top-link{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ccc;
+}
+.spain{
+  color: black;
+}
+.city{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.city-page{
+  margin-left: 20px;
+}
+.city-title{
+  font-size:50px;
+  font-weight: normal;
+  width: 300px;
+  margin: 0px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.city-title::after{
+  position: absolute;
+  bottom: 85px;
+  right: 130px;
+  content: " ";
+  width: 90px;
+  height: 5px;
+  background-color: black;
+  border-radius: 8px;
+}
+
+
+
+
+
+.bottom-side{
+  width: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 50px;
+  padding-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom-button{
+  position: absolute;
+  left: 100px;
+  bottom: 110px;
+  border: none;
+  border-radius: 50px;
+}
+.bottom-link{
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+.bottom-link::after{
+  position: absolute;
+  width: 50px;
+  height: 10px;
+
+  content: "";
+  background-image:url("../img/arrow-forward.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: cover;
+}
+.bottom-page{
+  line-height: 1.8;
+ margin: 0;
+ margin-left: 50px;
+
+}
